@@ -1,0 +1,16 @@
+.App {
+  padding: 0;
+  margin: 0;
+}
+
+.child{
+  float: left;
+}
+
+.list{
+  width: 60%;
+}
+
+.input{
+  width: 40%;
+}

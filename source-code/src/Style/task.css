@@ -1,0 +1,43 @@
+#card{
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 5%;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+#cardCont{
+    display: flex;
+    align-items: center;
+}
+
+#statusCircle-yellow{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(252, 164, 0);
+}
+
+#statusCircle-green{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 252, 21);
+}
+
+#taskName{
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+#taskDesc{
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#delete{
+    margin-left: auto;
+    background-color: blueviolet;
+    border: blueviolet;
+}
