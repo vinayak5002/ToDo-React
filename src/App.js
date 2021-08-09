@@ -6,6 +6,9 @@ import React, { useEffect, useState } from 'react';
 
 function App() {
   var rawData = localStorage.getItem("ToDoData");
+  if(rawData === null){
+    localStorage.setItem("ToDoData","[]");
+  }
   var data = JSON.parse(rawData);
 
   const [TaskList, setTaskList] = useState(
