@@ -2,14 +2,14 @@ import './App.css';
 import Head from './components/head';
 import List from './components/list';
 import Input from './components/input';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function App() {
+  var rawData = localStorage.getItem("ToDoData");
+  var data = JSON.parse(rawData);
 
   const [TaskList, setTaskList] = useState(
-    [
-      
-    ]
+    data
   );
 
   function Delete(deleteTask) {
@@ -18,21 +18,21 @@ function App() {
     setTaskList(TaskList.filter((e)=>{
       return e !== deleteTask;
     }));
-    // console.log(TaskList);
   }
 
   function addToList(title, desc){
     const addTask = {
-        stats: "0",
-        title: title,
-        desc: desc
-      };
-    console.log("I will add dw", addTask);
+      stats: "0",
+      title: title,
+      desc: desc
+    };
 
     setTaskList([...TaskList, addTask]);
-
-    // console.log(TaskList);
   }
+
+  useEffect(()=>{
+    localStorage.setItem("ToDoData", JSON.stringify(TaskList));
+  },[TaskList])
 
   return (
     <div className="App">

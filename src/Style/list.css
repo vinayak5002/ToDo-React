@@ -1,15 +1,15 @@
 #listBody{
-    background-color: rgb(228, 84, 253);
+    background-color: rgb(231, 115, 252);
     height: auto;
-    margin: 0px 10px;
+    margin: 0px 0px;
     padding: 20px;
-    color: white;
+    color: black;
     border-radius: 20px;
 }
 
 #listCont{
     min-height:90vh;
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 
 #number{
@@ -31,11 +31,17 @@
     margin-left: 6px;
     font-size: 1.2em;
     background-color: blueviolet;
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: 20px;
 }
 
 #zero-task{
     margin-top: 5px;
     font-size: 1.2em;
+}
+
+@media only screen  and (max-width: 700px){
+    #listBody{
+        z-index: -1;
+    }
 }

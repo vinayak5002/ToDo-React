@@ -27,9 +27,9 @@ function Input({updateList}){
                         <p>Enter title of the task</p>
                         <input type="text" name="title" id="title" value={title} onChange={(e)=> setTitle(e.target.value)} />
                         <p>Enter description:</p>
-                        <textarea name="desc" id="desc" cols="40" rows="4" value={desc} onChange={(e)=> setDesc(e.target.value)}></textarea>
+                        <textarea name="desc" id="desc" cols="auto" rows="4" value={desc} onChange={(e)=> setDesc(e.target.value)}></textarea>
                     </div>
-                    <input type="submit" id="submit" value="Submit" />
+                    <input type="submit" id="submit" value="Add task" />
                 </form>
             </div>
         </div>
